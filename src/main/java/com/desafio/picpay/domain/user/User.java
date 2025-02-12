@@ -5,10 +5,10 @@ import lombok.*;
 
 import java.math.BigDecimal;
 
-@Entity(name = "users")
-@Table(name="users")
 @Getter
 @Setter
+@Entity(name = "users")
+@Table(name="users")
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of="id")
@@ -34,4 +34,5 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
 }
